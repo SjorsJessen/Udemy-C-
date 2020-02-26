@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/main.cpp
+iostream
+-
+vector
+-
+

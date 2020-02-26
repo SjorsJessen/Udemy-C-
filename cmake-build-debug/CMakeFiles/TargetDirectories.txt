@@ -1,0 +1,3 @@
+/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/cmake-build-debug/CMakeFiles/Udemy_C_.dir
