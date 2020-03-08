@@ -6,19 +6,19 @@ using namespace std;
 void initVectors();
 void initArrays();
 void printMessage();
-void addVectors(vector<int> test_scores);
+void addVectors(vector<int>);
 void movieRatingsVector();
 
 int returnInt();
 
-int main()
-{
-    printMessage();
-    initVectors();
-    initArrays();
-    movieRatingsVector();
-    return 0;
-}
+//int main()
+//{
+//    printMessage();
+//    initVectors();
+//    initArrays();
+//    movieRatingsVector();
+//    return 0;
+//}
 
 void printMessage()
 {
@@ -37,25 +37,29 @@ void initVectors()
     vector<int> test_scores {100,98,99};
 
     cout << "\nTest scores using array syntax: " << endl;
-    cout << test_scores[0] << endl;
-    cout << test_scores[1] << endl;
-    cout << test_scores[2] << endl;
+    for(auto test_score : test_scores)
+    {
+        cout << test_score << endl;
+    }
 
     cout << "\nTest scores using vector syntax: " << endl;
-    cout << test_scores.at(0) << endl;
-    cout << test_scores.at(1) << endl;
-    cout << test_scores.at(2) << endl;
+    for(auto test_score : test_scores)
+    {
+        cout << test_score << endl;
+    }
     cout << "\nThere are " << test_scores.size() << " scores in the vector" << endl;
 
     cout << "\nEnter 3 test scores: " << endl;
-    cin >> test_scores.at(0);
-    cin >> test_scores.at(1);
-    cin >> test_scores.at(2);
+    for(auto test_score : test_scores)
+    {
+        cout << test_score << endl;
+    }
 
-    cout << "\nUpdated test scores: " <<endl;
-    cout << test_scores.at(0) << endl;
-    cout << test_scores.at(1) << endl;
-    cout << test_scores.at(2) << endl;
+    cout << "\nUpdated test scores: " << endl;
+    for(auto test_score : test_scores)
+    {
+        cout << test_score << endl;
+    }
 
     addVectors(test_scores);
 }
@@ -71,14 +75,12 @@ void addVectors(vector<int> test_scores)
     test_scores.push_back(score_to_add);
 
     cout << "\nTest scores are now: " << endl;
+    for(auto test_score : test_scores)
+    {
+        cout << test_score << endl;
+    }
 
-    cout << test_scores.at(0) << endl;
-    cout << test_scores.at(1) << endl;
-    cout << test_scores.at(2) << endl;
-    cout << test_scores.at(3) << endl;
-    cout << test_scores.at(4) << endl;
-
-    cout << "\n For loop test scores: " << endl;
+    cout << "\nFor loop test scores: " << endl;
     for (int test_score : test_scores)
     {
         cout << test_score << endl;
@@ -99,9 +101,9 @@ void movieRatingsVector()
 {
     vector<vector<int>> movie_ratings
     {
-            {1,2,3,4},
-            {1,2,4,4},
-            {1,3,4,5}
+        {1,2,3,4},
+        {1,2,4,4},
+        {1,3,4,5}
     };
 
     cout << "\nHere are the movie ratings from reviewer #1 using array syntax: " << endl;
@@ -119,7 +121,9 @@ void movieRatingsVector()
     cout << endl;
 }
 
-int returnInt(){
-    return 3;
+int returnInt()
+{
+    int intToReturn(3);
+    return intToReturn;
 }
 

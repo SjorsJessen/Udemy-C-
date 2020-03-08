@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/Segment 6/Vectors.cpp" "/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/cmake-build-debug/CMakeFiles/Udemy_C_.dir/Segment_6/Vectors.cpp.o"
+  "/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/Statement And Operators/StatementAndOperators.cpp" "/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/cmake-build-debug/CMakeFiles/Udemy_C_.dir/Statement_And_Operators/StatementAndOperators.cpp.o"
   "/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/main.cpp" "/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/cmake-build-debug/CMakeFiles/Udemy_C_.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

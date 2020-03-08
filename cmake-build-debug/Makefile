@@ -150,6 +150,33 @@ Segment_6/Vectors.cpp.s:
 	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Segment_6/Vectors.cpp.s
 .PHONY : Segment_6/Vectors.cpp.s
 
+Statement_And_Operators/StatementAndOperators.o: Statement_And_Operators/StatementAndOperators.cpp.o
+
+.PHONY : Statement_And_Operators/StatementAndOperators.o
+
+# target to build an object file
+Statement_And_Operators/StatementAndOperators.cpp.o:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Statement_And_Operators/StatementAndOperators.cpp.o
+.PHONY : Statement_And_Operators/StatementAndOperators.cpp.o
+
+Statement_And_Operators/StatementAndOperators.i: Statement_And_Operators/StatementAndOperators.cpp.i
+
+.PHONY : Statement_And_Operators/StatementAndOperators.i
+
+# target to preprocess a source file
+Statement_And_Operators/StatementAndOperators.cpp.i:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Statement_And_Operators/StatementAndOperators.cpp.i
+.PHONY : Statement_And_Operators/StatementAndOperators.cpp.i
+
+Statement_And_Operators/StatementAndOperators.s: Statement_And_Operators/StatementAndOperators.cpp.s
+
+.PHONY : Statement_And_Operators/StatementAndOperators.s
+
+# target to generate assembly for a file
+Statement_And_Operators/StatementAndOperators.cpp.s:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Statement_And_Operators/StatementAndOperators.cpp.s
+.PHONY : Statement_And_Operators/StatementAndOperators.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... Segment_6/Vectors.o"
 	@echo "... Segment_6/Vectors.i"
 	@echo "... Segment_6/Vectors.s"
+	@echo "... Statement_And_Operators/StatementAndOperators.o"
+	@echo "... Statement_And_Operators/StatementAndOperators.i"
+	@echo "... Statement_And_Operators/StatementAndOperators.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

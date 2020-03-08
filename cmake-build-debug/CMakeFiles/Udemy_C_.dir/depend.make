@@ -3,5 +3,7 @@
 
 CMakeFiles/Udemy_C_.dir/Segment_6/Vectors.cpp.o: ../Segment\ 6/Vectors.cpp
 
+CMakeFiles/Udemy_C_.dir/Statement_And_Operators/StatementAndOperators.cpp.o: ../Statement\ And\ Operators/StatementAndOperators.cpp
+
 CMakeFiles/Udemy_C_.dir/main.cpp.o: ../main.cpp
 

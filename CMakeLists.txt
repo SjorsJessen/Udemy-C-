@@ -3,4 +3,4 @@ project(Udemy_C_)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Udemy_C_ main.cpp "Segment 6/Vectors.cpp")
+add_executable(Udemy_C_ main.cpp "Segment 6/Vectors.cpp" "Statement And Operators/StatementAndOperators.cpp")

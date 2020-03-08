@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Udemy_C_.dir/Segment_6/Vectors.cpp.o"
+  "CMakeFiles/Udemy_C_.dir/Statement_And_Operators/StatementAndOperators.cpp.o"
   "CMakeFiles/Udemy_C_.dir/main.cpp.o"
   "Udemy_C_"
   "Udemy_C_.pdb"

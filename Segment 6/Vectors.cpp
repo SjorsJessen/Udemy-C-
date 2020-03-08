@@ -7,9 +7,10 @@
 
 using namespace std;
 
-void something()
-{
-    vector<char> vectors {'a', 'b', 'c', 'd'};
-    cout << "This is vector 0: " << vectors.at(0) << endl;
-}
+//int main()
+//{
+//    vector<char> vectors {'a', 'b', 'c', 'd'};
+//    cout << "This is vector 0: " << vectors.at(0) << endl;
+//    return 0;
+//}
 
