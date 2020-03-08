@@ -15,22 +15,21 @@ void RelationalOperators();
 void LogicalOperators();
 void SectionChallenge();
 
-int main()
-{
-    //AssignValue();
-    //ArithmeticOperator();
-    //EurToDollarConverter();
-    //AssignmentOperatorExercise();
-    //AssignmentArithmeticOperatorExercise(10);
-    //IncrementAndDecrement();
-    //MixedExpressionsAndConversions();
-    //TestingForEquality();
-    //RelationalOperators();
-    //LogicalOperators();
-    SectionChallenge();
-
-    return 0;
-}
+//int main()
+//{
+//    //AssignValue();
+//    //ArithmeticOperator();
+//    //EurToDollarConverter();
+//    //AssignmentOperatorExercise();
+//    //AssignmentArithmeticOperatorExercise(10);
+//    //IncrementAndDecrement();
+//    //MixedExpressionsAndConversions();
+//    //TestingForEquality();
+//    //RelationalOperators();
+//    //LogicalOperators();
+//    //SectionChallenge();
+//    return 0;
+//}
 
 void SectionChallenge()
 {
