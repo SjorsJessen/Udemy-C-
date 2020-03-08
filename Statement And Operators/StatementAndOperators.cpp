@@ -2,13 +2,16 @@
 
 using namespace std;
 
+int AssignmentArithmeticOperatorExercise(int number);
+
 void AssignValue();
 void ArithmeticOperator();
 void AssignmentOperatorExercise();
 void EurToDollarConverter();
 void IncrementAndDecrement();
 void MixedExpressionsAndConversions();
-int AssignmentArithmeticOperatorExercise(int number);
+void TestingForEquality();
+
 
 int main()
 {
@@ -18,8 +21,35 @@ int main()
     //AssignmentOperatorExercise();
     //AssignmentArithmeticOperatorExercise(10);
     //IncrementAndDecrement();
-    MixedExpressionsAndConversions();
+    //MixedExpressionsAndConversions();
+    //TestingForEquality();
+
     return 0;
+}
+
+void TestingForEquality()
+{
+    bool equal_result{false};
+    bool not_equal_result{false};
+
+    int num1{}, num2{};
+    double double1{}, double2{};
+
+    cout << boolalpha; //Converts 1 and 0 of booleans to true or false
+
+//    cout << "Enter two integers separated by space: ";
+//    cin >> num1 >> num2;
+//    equal_result = {num1 == num2};
+//    not_equal_result = {num1 != num2};
+//    cout << "Comparision result {equals}: " << equal_result << endl;
+//    cout << "Comparision result {not equals}: " << not_equal_result << endl;
+
+    cout << "Enter an integer and a double separated by space: ";
+    cin >> num1 >> double1; //Due to mixed expressions the int will be converted to a double and then the comparision happens
+    equal_result = {num1 == double1};
+    not_equal_result = {num1 != double1};
+    cout << "Comparision result {equals}: " << equal_result << endl;
+    cout << "Comparision result {not equals}: " << not_equal_result << endl;
 }
 
 void MixedExpressionsAndConversions()
@@ -43,32 +73,6 @@ void MixedExpressionsAndConversions()
     cout << "The average of the numbers is: " << average << endl;
 
     cout << endl;
-}
-
-int AssignmentArithmeticOperatorExercise(int number)
-{
-    int original_number{number};
-
-    number = number * 2;
-    cout << "Current value of number is: " <<  number << endl;
-
-    number = number + 9;
-    cout << "Current value of number is: " <<  number << endl;
-
-    number = number - 3;
-    cout << "Current value of number is: " <<  number << endl;
-
-    number = number / 2;
-    cout << "Current value of number is: " <<  number << endl;
-
-    number = number - original_number;
-    cout << "Current value of number is: " <<  number << endl;
-
-    number = number % 3;
-    cout << "Current value after modulo operation is: " <<  number << endl;
-
-    cout << "End result of number is: " <<  number << endl;
-    return number;
 }
 
 void EurToDollarConverter()
@@ -197,4 +201,30 @@ void IncrementAndDecrement()
     result = counter++ + 10;
     cout << "Counter: " << counter << endl;
     cout << "Result: " << result << endl;
+}
+
+int AssignmentArithmeticOperatorExercise(int number)
+{
+    int original_number{number};
+
+    number = number * 2;
+    cout << "Current value of number is: " <<  number << endl;
+
+    number = number + 9;
+    cout << "Current value of number is: " <<  number << endl;
+
+    number = number - 3;
+    cout << "Current value of number is: " <<  number << endl;
+
+    number = number / 2;
+    cout << "Current value of number is: " <<  number << endl;
+
+    number = number - original_number;
+    cout << "Current value of number is: " <<  number << endl;
+
+    number = number % 3;
+    cout << "Current value after modulo operation is: " <<  number << endl;
+
+    cout << "End result of number is: " <<  number << endl;
+    return number;
 }
