@@ -7,6 +7,7 @@ void ArithmeticOperator();
 void AssignmentOperatorExercise();
 void EurToDollarConverter();
 void IncrementAndDecrement();
+void MixedExpressionsAndConversions();
 int AssignmentArithmeticOperatorExercise(int number);
 
 int main()
@@ -16,9 +17,32 @@ int main()
     //EurToDollarConverter();
     //AssignmentOperatorExercise();
     //AssignmentArithmeticOperatorExercise(10);
-    IncrementAndDecrement();
-
+    //IncrementAndDecrement();
+    MixedExpressionsAndConversions();
     return 0;
+}
+
+void MixedExpressionsAndConversions()
+{
+    int total{};
+    int num1{}, num2{}, num3{};
+    const int count{3};
+
+    cout << "Enter 3 integers separated by spaces: ";
+    cin >> num1 >> num2 >> num3;
+
+    total = num1 + num2 + num3;
+    double average{0.0};
+
+    average = static_cast<double>(total) / count; //Total will be converted to double
+    //average = (double)total / count; //Old C++ conversion
+    //Static Cast is better to use because it also checks if the operand can be converted to a double!
+
+    cout << "The 3 numbers were: " << num1 << ", " << num2 << ", " << num3 << endl;
+    cout << "The sum of the numbers is: " << total << endl;
+    cout << "The average of the numbers is: " << average << endl;
+
+    cout << endl;
 }
 
 int AssignmentArithmeticOperatorExercise(int number)
