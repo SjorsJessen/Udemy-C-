@@ -13,6 +13,7 @@ void MixedExpressionsAndConversions();
 void TestingForEquality();
 void RelationalOperators();
 void LogicalOperators();
+void SectionChallenge();
 
 int main()
 {
@@ -25,9 +26,73 @@ int main()
     //MixedExpressionsAndConversions();
     //TestingForEquality();
     //RelationalOperators();
-    LogicalOperators();
+    //LogicalOperators();
+    SectionChallenge();
 
     return 0;
+}
+
+void SectionChallenge()
+{
+    //define conversion values in cents
+    const int dollar_value{100};
+    const int quarter_value{25};
+    const int dime_value{10};
+    const int nickel_value{5};
+
+    int change_amount{};
+
+    //Solution 1 not using the modulo operator
+    //Tutorial link: https://www.udemy.com/course/beginning-c-plus-plus-programming/learn/lecture/9535436#content
+    cout << "Enter an amount in cents: ";
+    cin >> change_amount;
+
+    int balance{}, dollars{}, quarters{}, dimes{}, nickles{}, pennies{};
+
+    dollars = change_amount / dollar_value;
+    balance = change_amount - (dollars * dollar_value);
+
+    quarters = balance / quarter_value;
+    balance -= quarters * quarter_value;
+
+    dimes = balance / dime_value;
+    balance -= dimes * dime_value;
+
+    nickles = balance / nickel_value;
+    balance -= nickles * nickel_value;
+
+    pennies = balance;
+
+    cout << "Amount of pennies: " << pennies << endl;
+
+    cout << "------------------------------------------" << endl;
+    cout << "Solution using the modulo operator" << endl;
+    cout << "------------------------------------------" << endl;
+
+    balance = dollars = quarters = dimes = nickles = pennies = 0; //Reset everything to zero
+
+    dollars = change_amount / dollar_value;
+    balance = change_amount % dollar_value;
+
+    quarters = balance / quarter_value;
+    balance %= quarter_value;
+
+    dimes = balance / dime_value;
+    balance %= dime_value;
+
+    nickles = balance / nickel_value;
+    balance %= dime_value;
+
+    pennies = balance;
+
+    cout << "\nYou can provide this change as follows: " << endl;
+    cout << "dollars: " << dollars << endl;
+    cout << "quarters: " << quarters << endl;
+    cout << "dimes: " << dimes << endl;
+    cout << "nickels: " << nickles << endl;
+    cout << "pennies: " << pennies << endl;
+
+    cout << endl;
 }
 
 void LogicalOperators()
