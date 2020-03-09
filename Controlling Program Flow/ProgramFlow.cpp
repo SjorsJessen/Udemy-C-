@@ -13,6 +13,9 @@ void IfStatements();
 void IfElseStatements();
 void Grades();
 void ShippingCalculator();
+void SwitchStatement();
+
+void EnumSwitchStatement();
 
 int main()
 {
@@ -20,8 +23,80 @@ int main()
     //IfStatements();
     //IfElseStatements();
     //Grades();
-    ShippingCalculator();
+    //ShippingCalculator();
+    //SwitchStatement();
+    EnumSwitchStatement();
     return 0;
+}
+
+void EnumSwitchStatement()
+{
+    enum Direction{left, right, up, down};
+
+    Direction heading_direction{left};
+
+    switch(heading_direction)
+    {
+        case left:
+            cout << "You're heading into the left direction!" << endl;
+            break;
+        case right:
+            cout << "You're heading into the right direction!" << endl;
+            break;
+        case up:
+            cout << "You're heading into the upward direction!" << endl;
+            break;
+        case down:
+            cout << "You're heading into the downward direction!" << endl;
+            break;
+        default: cout << "Inserted Direction is not a valid enum value!";
+    }
+    cout << endl;
+}
+
+void SwitchStatement()
+{
+    char letter_grade{};
+
+    cout << "Enter the letter grade you expect on the exam: " << endl;
+    cin >> letter_grade;
+
+    switch(letter_grade)
+    {
+        case 'A':
+        case 'a':
+            cout << "You need a a 90 or above!" << endl;
+            break;
+        case 'B':
+        case 'b':
+            cout << "You need 80-89 for a B!" << endl;
+            break;
+        case 'C':
+        case 'c':
+            cout << "You need 70-79 for an average grade!" << endl;
+            break;
+        case 'D':
+        case 'd':
+            cout << "You should strive for a better grade. All you need is 60-69.!" << endl;
+            break;
+        case 'F':
+        case 'f':
+        {
+            char confirm{}; //Needs curly brackets to create a variable in C++ switch statement.
+            cout << "Are you sure (Y/N)?";
+            cin >> confirm;
+
+            if(confirm == 'Y' || confirm == 'y')
+                cout << "Why would you settle for such a low grade. Go study!" << endl;
+            else if(confirm == 'N' || confirm == 'n')
+                cout << "Good to hear. Aim high!" << endl;
+            else
+                cout << "You didn't insert a Y/N!" << endl;
+
+            break;
+        }
+        default: cout << "Insert a valid grade letter!";
+    }
 }
 
 void ShippingCalculator()
