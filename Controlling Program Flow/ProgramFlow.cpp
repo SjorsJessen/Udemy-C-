@@ -5,6 +5,7 @@
 #include <iostream>
 #include <map>
 #include <iomanip>
+#include <vector>
 
 using namespace std;
 
@@ -17,6 +18,8 @@ void SwitchStatement();
 void EnumSwitchStatement();
 void ConditionalOperator();
 
+void ForLoop();
+
 int main()
 {
     //FillDictionary();
@@ -27,8 +30,54 @@ int main()
     //SwitchStatement();
     //EnumSwitchStatement();
     //ConditionalOperator();
-
+    ForLoop();
     return 0;
+}
+
+void ForLoop()
+{
+//    for (int i{1}; i <= 10; i += 2)
+//    {
+//        cout << "i is: " << i << endl;
+//    }
+
+//    for (int i {10}; i > 0; --i)
+//        cout << "i is: " << i << endl;
+//    cout << "Blast off!" << endl;
+
+//    for (int i{10}; i <= 100; i+=10)
+//    {
+//        if(i % 15 == 0)
+//            cout << "i is: " << i << endl;
+//    }
+
+//    for (int i{1}, j{5}; i <= 5; ++i, ++j)
+//    {
+//        cout << i << " + " << j << " = " << i + j << endl;
+//    }
+
+//    for (int i{1}; i <= 100; ++i)
+//    {
+//        cout << i;
+//
+//        if(i % 10 == 0)
+//            cout << endl;
+//        else
+//            cout << " ";
+//    }
+
+//    //This prints the same as the above for loop!
+//    for (int i{1}; i <= 100; ++i)
+//    {
+//        cout << i << ((i % 10 == 0) ? "\n" : " ");
+//    }
+
+    vector<int> nums {10,20,30,40,50};
+    //use 'unsigned' to avoid negative number integers and only use positives
+    for (unsigned i{0}; i < nums.size(); ++i)
+        cout << nums[i] << endl;
+
+    cout << endl;
 }
 
 void ConditionalOperator()
@@ -60,7 +109,6 @@ void ConditionalOperator()
         cout << "The numbers are the same" << endl;
     }
 }
-
 
 void EnumSwitchStatement()
 {
