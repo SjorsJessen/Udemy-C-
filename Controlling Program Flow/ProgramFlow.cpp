@@ -4,18 +4,108 @@
 
 #include <iostream>
 #include <map>
+#include <iomanip>
 
 using namespace std;
 
 void FillDictionary();
 void IfStatements();
 void IfElseStatements();
+void Grades();
+void ShippingCalculator();
+
 int main()
 {
     //FillDictionary();
     //IfStatements();
     //IfElseStatements();
+    //Grades();
+    ShippingCalculator();
     return 0;
+}
+
+void ShippingCalculator()
+{
+    int length{}, width{}, height{};
+
+    double base_cost{2.50};
+
+    const int tier1_threshold{100}; //volume
+    const int tier2_threshold{500}; //volume
+
+    int max_dimension_length{10}; //inches
+
+    double tier1_surcharge{0.10}; //10% extra
+    double tier2_surcharge{0.25}; //25% extra
+
+    //All dimensions must be 10 inches or less!
+
+    int package_volume{};
+
+    cout << "Welcome to the package cost calculator" << endl;
+    cout << "Enter length, width and height of the package separated by spaces: ";
+    cin >> length >> width >> height;
+
+    if(length > max_dimension_length || width > max_dimension_length || height > max_dimension_length)
+    {
+        cout << "Sorry package rejected - dimensions exceeded" << endl;
+    }
+    else
+    {
+        double package_cost{};
+        package_volume = length * width * height;
+        package_cost = base_cost;
+
+        if(package_volume > tier2_threshold)
+        {
+            package_cost += package_cost * tier2_surcharge;
+            cout << "Adding tier2 surcharge" << endl;
+        }
+        else if (package_volume > tier1_threshold)
+        {
+            package_cost += package_cost * tier1_surcharge;
+            cout << "Adding tier1 surcharge" << endl;
+        }
+
+        cout << fixed << setprecision(2); //Prints dollars nicely (need to #include <iomanip>)
+        cout << "The volume of your package is: " << package_volume << endl;
+        cout << "Your package will cost $" << package_cost << " to ship " << endl;
+    }
+    cout << endl;
+}
+
+void Grades()
+{
+    int score{};
+    cout << "Enter your score on the exam (0-100): ";
+    cin >> score;
+
+    char letter_grade{};
+
+    if(score >= 0 && score <= 100)
+    {
+        if(score > 90)
+            letter_grade = 'A';
+        else if(score > 80)
+            letter_grade = 'B';
+        else if(score > 70)
+            letter_grade = 'C';
+        else if(score > 60)
+            letter_grade = 'D';
+        else
+            letter_grade = 'F';
+
+        cout << "Your grade is: " << letter_grade << endl;
+
+        if(letter_grade == 'F')
+            cout << "You failed the test!" << endl;
+        else
+            cout << "You passed the test. Congrats!" << endl;
+    }
+    else
+    {
+        cout << "Sorry, " << score << " is not in range!" << endl;
+    }
 }
 
 void IfElseStatements()
