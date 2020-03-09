@@ -9,12 +9,38 @@ using namespace std;
 
 void FillDictionary();
 void IfStatements();
-
+void IfElseStatements();
 int main()
 {
     //FillDictionary();
-    IfStatements();
+    //IfStatements();
+    //IfElseStatements();
     return 0;
+}
+
+void IfElseStatements()
+{
+    int num{};
+    const int target{10};
+
+    cout << "Enter a number and I'll compare it to: " << target << ": ";
+    cin >> num;
+
+    if(num >= target)
+    {
+        cout << "\n====================================================" << endl;
+        cout << num << " is greater than or equal to " << target << endl;
+        int difference{num - target};
+        cout << num << " is " << difference << " greater than " << target << endl;
+    }
+    else
+    {
+        cout << "\n====================================================" << endl;
+        cout << num << " is less than " << target << endl;
+        int difference{target - num};
+        cout << num << " is " << difference << " less than " << target << endl;
+    }
+    cout << endl;
 }
 
 void IfStatements()
