@@ -20,6 +20,8 @@ void ConditionalOperator();
 
 void ForLoop();
 
+void RangeBasedForLoop();
+
 int main()
 {
     //FillDictionary();
@@ -30,8 +32,49 @@ int main()
     //SwitchStatement();
     //EnumSwitchStatement();
     //ConditionalOperator();
-    ForLoop();
+    //ForLoop();
+    RangeBasedForLoop();
     return 0;
+}
+
+void RangeBasedForLoop()
+{
+//    int scores[] {10,20,30};
+//
+//    for (auto score : scores)
+//        cout << score << endl;
+
+//    vector<double>temperatures {87.9, 77.9, 80.0, 72.5};
+//    double average_temperature{};
+//    double total{};
+//
+//    for(auto temperature : temperatures)
+//        total += temperature;
+//
+//    if(!temperatures.empty())
+//        average_temperature = total / temperatures.size();
+//
+//    cout << fixed << setprecision(1);
+//    cout << "Average temperature is: " << average_temperature << endl;
+
+//    //Possible to initialize the values which the loop will go through inside the loop itself
+//    for(auto value : {1,2,3,4,5})
+//        cout << "Value is: " << value << endl;
+
+
+//    for(auto c : "This is a test")
+//    {
+//        if(c != ' ')//If is not a space, print
+//            cout << c;
+//    }
+
+    for(auto c : "This is a test")
+        if(c == ' ')
+            cout << "\t"; //Replace space with a tab
+        else
+            cout << c;
+
+    cout << endl;
 }
 
 void ForLoop()
