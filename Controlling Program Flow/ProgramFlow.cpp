@@ -38,13 +38,37 @@ int main()
     //RangeBasedForLoop();
     //WhileLoop();
     //DoWhileLoop();
-    ContinueBreak();
-    //InfiniteLoops();
+    //ContinueBreak();
+    InfiniteLoops();
     return 0;
 }
 
 void InfiniteLoops()
 {
+//    //Infinite For Loop case which is a programming mistake.
+//    for(;;)
+//        cout << "This will print forever" << endl;
+
+//    //Infinite While Loop case which is a programming mistake.
+//    while(true)
+//        cout << "This will print forever" << endl;
+
+//    //Infinite Do While Loop case which is a programming mistake.
+//    do
+//    {
+//        cout << "This will print forever" << endl;
+//    }while(true);
+
+    //Proper Infinite Loop which user can break out of, wouldn't recommend, though
+    while(true)
+    {
+        char again{};
+        cout << "Do you want to loop again? (Y/N): ";
+        cin >> again;
+
+        if(again == 'N' || again == 'n')
+            break;
+    }
 
 }
 
