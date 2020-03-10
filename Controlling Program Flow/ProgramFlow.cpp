@@ -17,14 +17,12 @@ void ShippingCalculator();
 void SwitchStatement();
 void EnumSwitchStatement();
 void ConditionalOperator();
-
 void ForLoop();
-
 void RangeBasedForLoop();
-
 void WhileLoop();
-
 void DoWhileLoop();
+void ContinueBreak();
+void InfiniteLoops();
 
 int main()
 {
@@ -39,8 +37,36 @@ int main()
     //ForLoop();
     //RangeBasedForLoop();
     //WhileLoop();
-    DoWhileLoop();
+    //DoWhileLoop();
+    ContinueBreak();
+    //InfiniteLoops();
     return 0;
+}
+
+void InfiniteLoops()
+{
+
+}
+
+void ContinueBreak()
+{
+    vector<int> values {1, 2, -1, 3, -1, -99, 7, 8, 10};
+    /*
+     * Goes back to top after first -1 hit,
+     * then prints 3,
+     * then hits -1 again and goes back to top
+     * and there it finally hit -99 and breaks the loop
+    */
+    for(auto value : values)
+    {
+        if(value == -99)
+            break;
+        else if(value == -1)
+            continue;
+        else
+            cout << value << endl;
+    }
+    cout << "Hit -99, so I broke out of the loop" << endl;
 }
 
 void DoWhileLoop()
