@@ -24,6 +24,8 @@ void RangeBasedForLoop();
 
 void WhileLoop();
 
+void DoWhileLoop();
+
 int main()
 {
     //FillDictionary();
@@ -36,8 +38,35 @@ int main()
     //ConditionalOperator();
     //ForLoop();
     //RangeBasedForLoop();
-    WhileLoop();
+    //WhileLoop();
+    DoWhileLoop();
     return 0;
+}
+
+void DoWhileLoop()
+{
+    char selection{};
+    do
+    {
+        cout << "\n------------------------" << endl;
+        cout << "1. Do this " << endl;
+        cout << "2. Do that " << endl;
+        cout << "3. Do something else " << endl;
+        cout << "Q. To Quit. " << endl;
+        cout << "\nEnter your selection: ";
+        cin >> selection;
+
+        switch(selection)
+        {
+            case '1': cout << "You pressed Do this"; break;
+            case '2': cout << "You pressed Do that"; break;
+            case '3': cout << "You pressed Something else"; break;
+            case 'Q':
+            case 'q':
+                cout << "You've quit! Goodbye."; break;
+            default: cout << "You failed to input a valid character, try again!"; break;
+        }
+    } while(selection != 'q' && selection != 'Q');
 }
 
 void WhileLoop()
