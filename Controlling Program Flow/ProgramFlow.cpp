@@ -23,6 +23,7 @@ void WhileLoop();
 void DoWhileLoop();
 void ContinueBreak();
 void InfiniteLoops();
+void NestedLoops();
 
 int main()
 {
@@ -39,8 +40,50 @@ int main()
     //WhileLoop();
     //DoWhileLoop();
     //ContinueBreak();
-    InfiniteLoops();
+    //InfiniteLoops();
+    NestedLoops();
     return 0;
+}
+
+void NestedLoops()
+{
+    //Displays numeric tables
+//    for (int num1{1}; num1 <= 10; ++num1)
+//    {
+//        for (int num2 {1}; num2 <= 10; ++num2)
+//        {
+//            cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
+//        }
+//        cout << "====================" << endl;
+//    }
+
+    //Displays Histogram
+    int num_items{0};
+    cout << "How many data items do you have?";
+    cin >> num_items;
+
+    vector<int> data{};
+
+    for (int i {1}; i <= num_items; ++i)
+    {
+       int data_item{};
+       cout << "Enter data item " << i <<  ": ";
+       cin >> data_item;
+       data.push_back(data_item);
+    }
+
+    cout << "\n Displaying Histogram" << endl;
+    for(auto value : data)
+    {
+        for(int i {1}; i <= value; ++i)
+        {
+            if(i % 5 == 0)
+                cout << "*";
+            else
+                cout << "-";
+        }
+        cout << endl;
+    }
 }
 
 void InfiniteLoops()
