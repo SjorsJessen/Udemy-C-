@@ -123,6 +123,33 @@ Udemy_C_/fast:
 	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/build
 .PHONY : Udemy_C_/fast
 
+Characters_And_Strings/CharactersAndStrings.o: Characters_And_Strings/CharactersAndStrings.cpp.o
+
+.PHONY : Characters_And_Strings/CharactersAndStrings.o
+
+# target to build an object file
+Characters_And_Strings/CharactersAndStrings.cpp.o:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Characters_And_Strings/CharactersAndStrings.cpp.o
+.PHONY : Characters_And_Strings/CharactersAndStrings.cpp.o
+
+Characters_And_Strings/CharactersAndStrings.i: Characters_And_Strings/CharactersAndStrings.cpp.i
+
+.PHONY : Characters_And_Strings/CharactersAndStrings.i
+
+# target to preprocess a source file
+Characters_And_Strings/CharactersAndStrings.cpp.i:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Characters_And_Strings/CharactersAndStrings.cpp.i
+.PHONY : Characters_And_Strings/CharactersAndStrings.cpp.i
+
+Characters_And_Strings/CharactersAndStrings.s: Characters_And_Strings/CharactersAndStrings.cpp.s
+
+.PHONY : Characters_And_Strings/CharactersAndStrings.s
+
+# target to generate assembly for a file
+Characters_And_Strings/CharactersAndStrings.cpp.s:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Characters_And_Strings/CharactersAndStrings.cpp.s
+.PHONY : Characters_And_Strings/CharactersAndStrings.cpp.s
+
 Controlling_Program_Flow/ProgramFlow.o: Controlling_Program_Flow/ProgramFlow.cpp.o
 
 .PHONY : Controlling_Program_Flow/ProgramFlow.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Udemy_C_"
+	@echo "... Characters_And_Strings/CharactersAndStrings.o"
+	@echo "... Characters_And_Strings/CharactersAndStrings.i"
+	@echo "... Characters_And_Strings/CharactersAndStrings.s"
 	@echo "... Controlling_Program_Flow/ProgramFlow.o"
 	@echo "... Controlling_Program_Flow/ProgramFlow.i"
 	@echo "... Controlling_Program_Flow/ProgramFlow.s"

@@ -25,25 +25,25 @@ void ContinueBreak();
 void InfiniteLoops();
 void NestedLoops();
 
-int main()
-{
-    //FillDictionary();
-    //IfStatements();
-    //IfElseStatements();
-    //Grades();
-    //ShippingCalculator();
-    //SwitchStatement();
-    //EnumSwitchStatement();
-    //ConditionalOperator();
-    //ForLoop();
-    //RangeBasedForLoop();
-    //WhileLoop();
-    //DoWhileLoop();
-    //ContinueBreak();
-    //InfiniteLoops();
-    NestedLoops();
-    return 0;
-}
+//int main()
+//{
+//    //FillDictionary();
+//    //IfStatements();
+//    //IfElseStatements();
+//    //Grades();
+//    //ShippingCalculator();
+//    //SwitchStatement();
+//    //EnumSwitchStatement();
+//    //ConditionalOperator();
+//    //ForLoop();
+//    //RangeBasedForLoop();
+//    //WhileLoop();
+//    //DoWhileLoop();
+//    //ContinueBreak();
+//    //InfiniteLoops();
+//    NestedLoops();
+//    return 0;
+//}
 
 void NestedLoops()
 {

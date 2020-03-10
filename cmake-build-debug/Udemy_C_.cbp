@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/Characters And Strings/CharactersAndStrings.cpp">
+			<Option target="Udemy_C_"/>
+		</Unit>
 		<Unit filename="/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/Controlling Program Flow/ProgramFlow.cpp">
 			<Option target="Udemy_C_"/>
 		</Unit>
