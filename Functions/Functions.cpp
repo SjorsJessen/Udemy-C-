@@ -23,16 +23,16 @@ void set_array(int arr[], size_t size, int value);
 
 using namespace std;
 
-int main()
-{
-    //MathCalculations();
-    //RandomNumberCalculations();
-    //MathFunctionsExercise();
-    //area_circle();
-    //volume_cylinder();
-    array_to_functions();
-    return 0;
-}
+//int main()
+//{
+//    //MathCalculations();
+//    //RandomNumberCalculations();
+//    //MathFunctionsExercise();
+//    //area_circle();
+//    //volume_cylinder();
+//    array_to_functions();
+//    return 0;
+//}
 
 void array_to_functions()
 {
