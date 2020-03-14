@@ -43,14 +43,14 @@ void pass_by_reference2(string &name);
 void pass_by_reference3(vector<string> &v);
 void print_vector(const vector<string> &v); //Should be const due to avoiding changes when printing strings
 
-int main()
-{
-    //function_parameters();
-    //default_argument_values();
-    pass_by_reference();
-    cout << endl;
-    return 0;
-}
+//int main()
+//{
+//    //function_parameters();
+//    //default_argument_values();
+//    pass_by_reference();
+//    cout << endl;
+//    return 0;
+//}
 
 void pass_by_reference()
 {

@@ -258,6 +258,33 @@ Functions/OverloadingFunctions.cpp.s:
 	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Functions/OverloadingFunctions.cpp.s
 .PHONY : Functions/OverloadingFunctions.cpp.s
 
+Functions/ScopeRules.o: Functions/ScopeRules.cpp.o
+
+.PHONY : Functions/ScopeRules.o
+
+# target to build an object file
+Functions/ScopeRules.cpp.o:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Functions/ScopeRules.cpp.o
+.PHONY : Functions/ScopeRules.cpp.o
+
+Functions/ScopeRules.i: Functions/ScopeRules.cpp.i
+
+.PHONY : Functions/ScopeRules.i
+
+# target to preprocess a source file
+Functions/ScopeRules.cpp.i:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Functions/ScopeRules.cpp.i
+.PHONY : Functions/ScopeRules.cpp.i
+
+Functions/ScopeRules.s: Functions/ScopeRules.cpp.s
+
+.PHONY : Functions/ScopeRules.s
+
+# target to generate assembly for a file
+Functions/ScopeRules.cpp.s:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Functions/ScopeRules.cpp.s
+.PHONY : Functions/ScopeRules.cpp.s
+
 Segment_6/Vectors.o: Segment_6/Vectors.cpp.o
 
 .PHONY : Segment_6/Vectors.o
@@ -363,6 +390,9 @@ help:
 	@echo "... Functions/OverloadingFunctions.o"
 	@echo "... Functions/OverloadingFunctions.i"
 	@echo "... Functions/OverloadingFunctions.s"
+	@echo "... Functions/ScopeRules.o"
+	@echo "... Functions/ScopeRules.i"
+	@echo "... Functions/ScopeRules.s"
 	@echo "... Segment_6/Vectors.o"
 	@echo "... Segment_6/Vectors.i"
 	@echo "... Segment_6/Vectors.s"

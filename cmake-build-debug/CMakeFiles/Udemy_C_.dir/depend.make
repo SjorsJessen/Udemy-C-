@@ -11,6 +11,8 @@ CMakeFiles/Udemy_C_.dir/Functions/Functions.cpp.o: ../Functions/Functions.cpp
 
 CMakeFiles/Udemy_C_.dir/Functions/OverloadingFunctions.cpp.o: ../Functions/OverloadingFunctions.cpp
 
+CMakeFiles/Udemy_C_.dir/Functions/ScopeRules.cpp.o: ../Functions/ScopeRules.cpp
+
 CMakeFiles/Udemy_C_.dir/Segment_6/Vectors.cpp.o: ../Segment\ 6/Vectors.cpp
 
 CMakeFiles/Udemy_C_.dir/Statement_And_Operators/StatementAndOperators.cpp.o: ../Statement\ And\ Operators/StatementAndOperators.cpp

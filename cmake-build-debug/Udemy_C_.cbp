@@ -95,6 +95,9 @@
 		<Unit filename="/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/Functions/OverloadingFunctions.cpp">
 			<Option target="Udemy_C_"/>
 		</Unit>
+		<Unit filename="/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/Functions/ScopeRules.cpp">
+			<Option target="Udemy_C_"/>
+		</Unit>
 		<Unit filename="/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/Segment 6/Vectors.cpp">
 			<Option target="Udemy_C_"/>
 		</Unit>
