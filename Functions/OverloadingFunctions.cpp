@@ -11,8 +11,15 @@ void print(string);
 void print(string, string);
 void print(vector<string>);
 
+void OverloadFunctions();
 
-int main()
+//int main()
+//{
+//    OverloadFunctions();
+//    return 0;
+//}
+
+void OverloadFunctions()
 {
     print(100); //int
     print('A'); //Character is always promoted to int should print 65 ASCII {'A
@@ -27,8 +34,6 @@ int main()
 
     vector<string> three_stooges {"Larry", "Moe", "Curly"};
     print(three_stooges);
-
-    return 0;
 }
 
 void print(int num)

@@ -16,17 +16,49 @@ void volume_cylinder();
 double calc_area_circle(double);
 double calc_volume_cylinder(double radius, double height);
 
+void array_to_functions();
+void print_array(const int arr[], size_t size);
+void set_array(int arr[], size_t size, int value);
+
+
 using namespace std;
 
-//int main()
-//{
-//    //MathCalculations();
-//    //RandomNumberCalculations();
-//    //MathFunctionsExercise();
-//    //area_circle();
-//    //volume_cylinder();
-//    return 0;
-//}
+int main()
+{
+    //MathCalculations();
+    //RandomNumberCalculations();
+    //MathFunctionsExercise();
+    //area_circle();
+    //volume_cylinder();
+    array_to_functions();
+    return 0;
+}
+
+void array_to_functions()
+{
+    int my_scores[] {100,98,90,86,84};
+
+    print_array(my_scores, 5);
+    set_array(my_scores, 5, 100); //Sets every value of the array to 100
+    print_array(my_scores, 5);
+    print_array(my_scores, 5);
+
+    cout << endl;
+}
+
+void print_array(const int arr[], size_t size) //const
+{
+    for(size_t i{0}; i < size; ++i)
+        cout << arr[i] << " ";
+    cout << endl;
+    //arr[0] = 50000; //Bug, solve by setting array to const to avoid changes and make array read only
+}
+
+void set_array(int arr[], size_t size, int value) //Sets each element to value
+{
+    for(size_t i{0}; i < size; ++i)
+        arr[i] = value;
+}
 
 double calc_area_circle(double radius)
 {
