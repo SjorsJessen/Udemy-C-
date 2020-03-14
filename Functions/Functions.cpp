@@ -3,15 +3,18 @@
 #include <cstdlib> //Required for rand()
 #include <ctime> //Required for time()
 
-
 const double pi{3.14159};
 
 void MathCalculations();
 void RandomNumberCalculations();
 void MathFunctionsExercise();
+
+//Function prototype examples
 void area_circle();
 void volume_cylinder();
-double calc_area_circle(double radius);
+
+double calc_area_circle(double);
+double calc_volume_cylinder(double radius, double height);
 
 using namespace std;
 
@@ -21,16 +24,8 @@ int main()
     //RandomNumberCalculations();
     //MathFunctionsExercise();
     //area_circle();
-    volume_cylinder();
+    //volume_cylinder();
     return 0;
-}
-
-void area_circle()
-{
-    double radius{};
-    cout << "\nEnter the radius of the circle: ";
-    cin >> radius;
-    cout << "The area of a circle with radius " << radius << " is " << calc_area_circle(radius) << endl;
 }
 
 double calc_area_circle(double radius)
@@ -41,6 +36,14 @@ double calc_area_circle(double radius)
 double calc_volume_cylinder(double radius, double height)
 {
     return calc_area_circle(radius) * height;
+}
+
+void area_circle()
+{
+    double radius{};
+    cout << "\nEnter the radius of the circle: ";
+    cin >> radius;
+    cout << "The area of a circle with radius " << radius << " is " << calc_area_circle(radius) << endl;
 }
 
 void volume_cylinder()
