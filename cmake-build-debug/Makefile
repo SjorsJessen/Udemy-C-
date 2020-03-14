@@ -177,6 +177,33 @@ Controlling_Program_Flow/ProgramFlow.cpp.s:
 	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Controlling_Program_Flow/ProgramFlow.cpp.s
 .PHONY : Controlling_Program_Flow/ProgramFlow.cpp.s
 
+Functions/FunctionParameters.o: Functions/FunctionParameters.cpp.o
+
+.PHONY : Functions/FunctionParameters.o
+
+# target to build an object file
+Functions/FunctionParameters.cpp.o:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Functions/FunctionParameters.cpp.o
+.PHONY : Functions/FunctionParameters.cpp.o
+
+Functions/FunctionParameters.i: Functions/FunctionParameters.cpp.i
+
+.PHONY : Functions/FunctionParameters.i
+
+# target to preprocess a source file
+Functions/FunctionParameters.cpp.i:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Functions/FunctionParameters.cpp.i
+.PHONY : Functions/FunctionParameters.cpp.i
+
+Functions/FunctionParameters.s: Functions/FunctionParameters.cpp.s
+
+.PHONY : Functions/FunctionParameters.s
+
+# target to generate assembly for a file
+Functions/FunctionParameters.cpp.s:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Functions/FunctionParameters.cpp.s
+.PHONY : Functions/FunctionParameters.cpp.s
+
 Functions/Functions.o: Functions/Functions.cpp.o
 
 .PHONY : Functions/Functions.o
@@ -300,6 +327,9 @@ help:
 	@echo "... Controlling_Program_Flow/ProgramFlow.o"
 	@echo "... Controlling_Program_Flow/ProgramFlow.i"
 	@echo "... Controlling_Program_Flow/ProgramFlow.s"
+	@echo "... Functions/FunctionParameters.o"
+	@echo "... Functions/FunctionParameters.i"
+	@echo "... Functions/FunctionParameters.s"
 	@echo "... Functions/Functions.o"
 	@echo "... Functions/Functions.i"
 	@echo "... Functions/Functions.s"

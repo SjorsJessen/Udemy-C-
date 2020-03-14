@@ -5,6 +5,8 @@ CMakeFiles/Udemy_C_.dir/Characters_And_Strings/CharactersAndStrings.cpp.o: ../Ch
 
 CMakeFiles/Udemy_C_.dir/Controlling_Program_Flow/ProgramFlow.cpp.o: ../Controlling\ Program\ Flow/ProgramFlow.cpp
 
+CMakeFiles/Udemy_C_.dir/Functions/FunctionParameters.cpp.o: ../Functions/FunctionParameters.cpp
+
 CMakeFiles/Udemy_C_.dir/Functions/Functions.cpp.o: ../Functions/Functions.cpp
 
 CMakeFiles/Udemy_C_.dir/Segment_6/Vectors.cpp.o: ../Segment\ 6/Vectors.cpp

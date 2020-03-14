@@ -18,15 +18,15 @@ double calc_volume_cylinder(double radius, double height);
 
 using namespace std;
 
-int main()
-{
-    //MathCalculations();
-    //RandomNumberCalculations();
-    //MathFunctionsExercise();
-    //area_circle();
-    //volume_cylinder();
-    return 0;
-}
+//int main()
+//{
+//    //MathCalculations();
+//    //RandomNumberCalculations();
+//    //MathFunctionsExercise();
+//    //area_circle();
+//    //volume_cylinder();
+//    return 0;
+//}
 
 double calc_area_circle(double radius)
 {
