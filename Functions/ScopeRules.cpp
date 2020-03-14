@@ -6,6 +6,8 @@ void local_example();
 void global_example();
 void static_local_example();
 
+void scope_rules();
+
 int num {300}; //Global variable - declared outside any class or function
 
 void global_example()
@@ -33,7 +35,13 @@ void static_local_example()
 }
 
 
-int main()
+//int main()
+//{
+//    scope_rules();
+//    return 0;
+//}
+
+void scope_rules()
 {
     int num {100}; //Local to main
     int num1 {500}; //Local to main
@@ -59,5 +67,4 @@ int main()
     static_local_example();
 
     cout << endl;
-    return 0;
 }
