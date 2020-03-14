@@ -37,14 +37,14 @@ void greetings(string name, string prefix = "Mr.", string suffix = "");
 double calc_cost(double base_cost = 100.0, double tax_rate = 0.06, double shipping = 3.50);
 
 
-int main()
-{
-    //function_parameters();
-    default_argument_values();
-
-    cout << endl;
-    return 0;
-}
+//int main()
+//{
+//    //function_parameters();
+//    default_argument_values();
+//
+//    cout << endl;
+//    return 0;
+//}
 
 void default_argument_values()
 {
