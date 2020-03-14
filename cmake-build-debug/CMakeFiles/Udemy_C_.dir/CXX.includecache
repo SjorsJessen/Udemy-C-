@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/Characters And Strings/CharactersAndStrings.cpp
+/Users/sjorsjessen/Google Drive/Coding/C++/C++/Udemy C++ (Advanced)/Udemy-C-/Functions/Functions.cpp
 iostream
 -
-string
+cmath
 -
 

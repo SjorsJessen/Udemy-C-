@@ -177,6 +177,33 @@ Controlling_Program_Flow/ProgramFlow.cpp.s:
 	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Controlling_Program_Flow/ProgramFlow.cpp.s
 .PHONY : Controlling_Program_Flow/ProgramFlow.cpp.s
 
+Functions/Functions.o: Functions/Functions.cpp.o
+
+.PHONY : Functions/Functions.o
+
+# target to build an object file
+Functions/Functions.cpp.o:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Functions/Functions.cpp.o
+.PHONY : Functions/Functions.cpp.o
+
+Functions/Functions.i: Functions/Functions.cpp.i
+
+.PHONY : Functions/Functions.i
+
+# target to preprocess a source file
+Functions/Functions.cpp.i:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Functions/Functions.cpp.i
+.PHONY : Functions/Functions.cpp.i
+
+Functions/Functions.s: Functions/Functions.cpp.s
+
+.PHONY : Functions/Functions.s
+
+# target to generate assembly for a file
+Functions/Functions.cpp.s:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Functions/Functions.cpp.s
+.PHONY : Functions/Functions.cpp.s
+
 Segment_6/Vectors.o: Segment_6/Vectors.cpp.o
 
 .PHONY : Segment_6/Vectors.o
@@ -273,6 +300,9 @@ help:
 	@echo "... Controlling_Program_Flow/ProgramFlow.o"
 	@echo "... Controlling_Program_Flow/ProgramFlow.i"
 	@echo "... Controlling_Program_Flow/ProgramFlow.s"
+	@echo "... Functions/Functions.o"
+	@echo "... Functions/Functions.i"
+	@echo "... Functions/Functions.s"
 	@echo "... Segment_6/Vectors.o"
 	@echo "... Segment_6/Vectors.i"
 	@echo "... Segment_6/Vectors.s"

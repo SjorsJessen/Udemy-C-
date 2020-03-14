@@ -27,12 +27,12 @@ using namespace std;
  * --------------------------------------------------
  */
 
-int main()
-{
-    //CStyleString();
-    CPPStrings();
-    return 0;
-}
+//int main()
+//{
+//    //CStyleString();
+//    CPPStrings();
+//    return 0;
+//}
 
 void CPPStrings()
 {
