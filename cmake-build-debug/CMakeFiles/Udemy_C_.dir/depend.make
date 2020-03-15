@@ -15,6 +15,8 @@ CMakeFiles/Udemy_C_.dir/Functions/RecursiveFunctions.cpp.o: ../Functions/Recursi
 
 CMakeFiles/Udemy_C_.dir/Functions/ScopeRules.cpp.o: ../Functions/ScopeRules.cpp
 
+CMakeFiles/Udemy_C_.dir/Pointers_&_References/SimplePointers.cpp.o: ../Pointers\ &\ References/SimplePointers.cpp
+
 CMakeFiles/Udemy_C_.dir/Segment_6/Vectors.cpp.o: ../Segment\ 6/Vectors.cpp
 
 CMakeFiles/Udemy_C_.dir/Statement_And_Operators/StatementAndOperators.cpp.o: ../Statement\ And\ Operators/StatementAndOperators.cpp

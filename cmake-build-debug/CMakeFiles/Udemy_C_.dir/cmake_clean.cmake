@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Udemy_C_.dir/Functions/OverloadingFunctions.cpp.o"
   "CMakeFiles/Udemy_C_.dir/Functions/RecursiveFunctions.cpp.o"
   "CMakeFiles/Udemy_C_.dir/Functions/ScopeRules.cpp.o"
+  "CMakeFiles/Udemy_C_.dir/Pointers_&_References/SimplePointers.cpp.o"
   "CMakeFiles/Udemy_C_.dir/Segment_6/Vectors.cpp.o"
   "CMakeFiles/Udemy_C_.dir/Statement_And_Operators/StatementAndOperators.cpp.o"
   "CMakeFiles/Udemy_C_.dir/main.cpp.o"

@@ -312,6 +312,33 @@ Functions/ScopeRules.cpp.s:
 	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make CMakeFiles/Udemy_C_.dir/Functions/ScopeRules.cpp.s
 .PHONY : Functions/ScopeRules.cpp.s
 
+Pointers_&_References/SimplePointers.o: Pointers_&_References/SimplePointers.cpp.o
+
+.PHONY : Pointers_&_References/SimplePointers.o
+
+# target to build an object file
+Pointers_&_References/SimplePointers.cpp.o:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make "CMakeFiles/Udemy_C_.dir/Pointers_&_References/SimplePointers.cpp.o"
+.PHONY : Pointers_&_References/SimplePointers.cpp.o
+
+Pointers_&_References/SimplePointers.i: Pointers_&_References/SimplePointers.cpp.i
+
+.PHONY : Pointers_&_References/SimplePointers.i
+
+# target to preprocess a source file
+Pointers_&_References/SimplePointers.cpp.i:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make "CMakeFiles/Udemy_C_.dir/Pointers_&_References/SimplePointers.cpp.i"
+.PHONY : Pointers_&_References/SimplePointers.cpp.i
+
+Pointers_&_References/SimplePointers.s: Pointers_&_References/SimplePointers.cpp.s
+
+.PHONY : Pointers_&_References/SimplePointers.s
+
+# target to generate assembly for a file
+Pointers_&_References/SimplePointers.cpp.s:
+	$(MAKE) -f CMakeFiles/Udemy_C_.dir/build.make "CMakeFiles/Udemy_C_.dir/Pointers_&_References/SimplePointers.cpp.s"
+.PHONY : Pointers_&_References/SimplePointers.cpp.s
+
 Segment_6/Vectors.o: Segment_6/Vectors.cpp.o
 
 .PHONY : Segment_6/Vectors.o
@@ -423,6 +450,9 @@ help:
 	@echo "... Functions/ScopeRules.o"
 	@echo "... Functions/ScopeRules.i"
 	@echo "... Functions/ScopeRules.s"
+	@echo "... Pointers_&_References/SimplePointers.o"
+	@echo "... Pointers_&_References/SimplePointers.i"
+	@echo "... Pointers_&_References/SimplePointers.s"
 	@echo "... Segment_6/Vectors.o"
 	@echo "... Segment_6/Vectors.i"
 	@echo "... Segment_6/Vectors.s"
