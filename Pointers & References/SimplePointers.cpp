@@ -5,14 +5,39 @@
 void store_address_in_pointer();
 void dereferencing_pointer();
 
+void dynamic_memory_allocation();
+
 using namespace std;
 
 int main()
 {
-    store_address_in_pointer();
-    dereferencing_pointer();
+    //store_address_in_pointer();
+    //dereferencing_pointer();
+    dynamic_memory_allocation();
     cout << endl;
     return 0;
+}
+
+void dynamic_memory_allocation()
+{
+    int *int_ptr{nullptr};
+    int_ptr = new int;
+    cout << int_ptr << endl; //Will show its memory location in the Heap
+    delete int_ptr; //Deletes pointer and frees op the storage
+
+    size_t size{0};
+    double *temp_ptr{nullptr};
+
+    cout << "How many temps? ";
+    cin >> size;
+
+    temp_ptr = new double[size]; //Create memory space in the heap for 'size' amount of doubles
+    cout << temp_ptr << endl; //Displays memory location of the first double of 'size'
+    delete [] temp_ptr; //Syntax to remove array pointer from storage
+
+//    while(true) //Never do this! Will create a infinte loop of memory leaks resulting in crash!
+//        temp_ptr = new double[size];
+    cout << endl;
 }
 
 void dereferencing_pointer()
