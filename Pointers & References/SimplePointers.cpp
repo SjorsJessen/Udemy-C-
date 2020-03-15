@@ -4,8 +4,9 @@
 
 void store_address_in_pointer();
 void dereferencing_pointer();
-
 void dynamic_memory_allocation();
+
+void relationship_between_pointers_and_arrays();
 
 using namespace std;
 
@@ -13,9 +14,40 @@ int main()
 {
     //store_address_in_pointer();
     //dereferencing_pointer();
-    dynamic_memory_allocation();
+    //dynamic_memory_allocation();
+    relationship_between_pointers_and_arrays();
     cout << endl;
     return 0;
+}
+
+void relationship_between_pointers_and_arrays()
+{
+    int scores[]{100,95,83};
+
+    cout << "Value of scores " << scores << endl;
+
+    int *score_ptr{scores};
+    cout << "Value of score_ptr: " << score_ptr << endl;
+
+    cout << "\nArray Subscript Notation-----------------------------" << endl;
+    cout << scores[0] << endl;
+    cout << scores[1] << endl;
+    cout << scores[2] << endl;
+
+    cout << "\nPointer Subscript Notation-----------------------------" << endl;
+    cout << score_ptr[0] << endl;
+    cout << score_ptr[1] << endl;
+    cout << score_ptr[2] << endl;
+
+    cout << "\nPointer offset Notation-----------------------------" << endl;
+    cout << *(score_ptr) << endl;
+    cout << *(score_ptr + 1) << endl;
+    cout << *(score_ptr + 2) << endl;
+
+    cout << "\nArray offset Notation-----------------------------" << endl;
+    cout << *(scores) << endl;
+    cout << *(scores + 1) << endl;
+    cout << *(scores + 2) << endl;
 }
 
 void dynamic_memory_allocation()
