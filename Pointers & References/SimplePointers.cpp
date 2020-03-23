@@ -5,10 +5,10 @@
 void store_address_in_pointer();
 void dereferencing_pointer();
 void dynamic_memory_allocation();
-
 void relationship_between_pointers_and_arrays();
-
 void pointer_arithmetic();
+
+void passing_pointers_to_functions();
 
 using namespace std;
 
@@ -18,9 +18,63 @@ int main()
     //dereferencing_pointer();
     //dynamic_memory_allocation();
     //relationship_between_pointers_and_arrays();
-    pointer_arithmetic();
+    //pointer_arithmetic();
+    passing_pointers_to_functions();
     cout << endl;
+
     return 0;
+}
+
+void double_data(int *int_ptr)
+{
+    *int_ptr *= 2;
+}
+
+void swap(int *a, int*b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void display(const vector<string> *const v)
+{
+    //(*v).at(0) = "Funny"; //Not possible due to const vector<string>
+    for (auto str : *v)
+    {
+        cout << str << " ";
+    }
+    cout << endl;
+    //v = nullptr; //Not possible due to const 'v'
+}
+void passing_pointers_to_functions()
+{
+//    //Double Data
+//    int value{10};
+//    int *int_ptr{nullptr};
+//
+//    cout << "Value: " << value << endl;
+//    double_data(&value);
+//    cout << "Value: " << value << endl;
+//
+//    cout << "==============================" << endl;
+//    int_ptr = &value;
+//    double_data(int_ptr);
+//    cout << "Value: " << value << endl;
+
+//    //Swap
+//    int x{100}, y{200};
+//    cout << "\nx: " << x << endl;
+//    cout << "y: " << y << endl;
+//
+//    swap(&x,&y);
+//    cout << "\nx: " << x << endl;
+//    cout << "y: " << y << endl;
+
+    //Display
+    vector<string> stooges{"Larry", "Moe", "Curly"};
+    display(&stooges);
+    cout << endl;
 }
 
 void pointer_arithmetic()
